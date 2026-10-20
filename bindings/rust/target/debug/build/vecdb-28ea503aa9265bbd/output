@@ -1,0 +1,7 @@
+cargo:rustc-link-search=native=/home/stefan/develop/l1vm/vm/modules/vector-db
+cargo:rustc-link-lib=dylib=vecdb
+cargo:rustc-link-arg=-Wl,-rpath,/home/stefan/develop/l1vm/vm/modules/vector-db
+cargo:rerun-if-env-changed=VECDB_LIB_DIR
+cargo:rerun-if-changed=/home/stefan/develop/l1vm/vm/modules/vector-db/libvecdb.so
+cargo:rerun-if-changed=/home/stefan/develop/l1vm/vm/modules/vector-db/libvecdb.dylib
+cargo:rerun-if-changed=/home/stefan/develop/l1vm/vm/modules/vector-db/vecdb.dll
